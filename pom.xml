@@ -49,19 +49,19 @@
         <url>https://jira.jboss.com/jira/browse/JGRP</url>
     </issueManagement>
 
-    <distributionManagement>
+    <!--distributionManagement>
         <repository>
             <id>jboss-releases-repository</id>
             <name>JBoss Releases Repository</name>
             <url>https://repository.jboss.org/nexus/service/local/staging/deploy/maven2/</url>
         </repository>
-    </distributionManagement>
+    </distributionManagement-->
 
     <prerequisites>
         <maven>3.0.4</maven>
     </prerequisites>
 
-    <repositories>
+    <!--repositories>
         <repository>
             <id>jboss-public-repository-group</id>
             <name>JBoss Public Maven Repository Group</name>
@@ -76,7 +76,7 @@
                 <updatePolicy>never</updatePolicy>
             </snapshots>
         </repository>
-    </repositories>
+    </repositories-->
 
     <dependencies>
         <dependency>
@@ -85,9 +85,9 @@
             <version>3.6.0.Final</version>
         </dependency>
         <dependency>
-            <groupId>log4j</groupId>
-            <artifactId>log4j</artifactId>
-            <version>1.2.14</version>
+            <groupId>org.apache.logging.log4j</groupId>
+            <artifactId>log4j-api</artifactId>
+            <version>2.0</version>
             <optional>true</optional>
         </dependency>
         <dependency>
